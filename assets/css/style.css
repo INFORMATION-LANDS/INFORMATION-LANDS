@@ -1,0 +1,283 @@
+.personagem-secundario {
+    align-items: center;
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3 {
+    color: #0a74da; /* Cor azul para títulos */
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo do menu */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: #0a74da;
+}
+
+/* Seção Home */
+footer {
+    position: relative;
+    background-color: #78d3cf;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('assets/images/logo.png'); /* Imagem de fundo */
+    background-size: 150px 150px; /* Tamanho da logo */
+    background-position: center bottom; /* Posição da logo no rodapé */
+    background-repeat: no-repeat; /* Evitar repetição da logo */
+    opacity: 0.9; /* Transparência da imagem de fundo */
+}
+
+.footer-content {
+    position: relative; /* Para que o conteúdo fique acima da logo */
+    z-index: 1;
+    
+}
+.h4 {
+  text-align: justify;
+}
+
+
+.instagram-logo {
+    width: 50px; /* Tamanho da logo do Instagram */
+    height: auto;
+    margin-top: 15px;
+}
+
+.home-section {
+    
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('../images/banner.jpg') no-repeat center center/cover;
+        position: relative;
+}
+
+.home-section .banner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.home-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+}
+
+/* Seção Personagens */
+.personagens-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.personagem-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personagem-img img {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.personagem-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.personagem-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Seção História */
+.historia-section {
+    font-family: Arial, sans-serif;
+    padding: 70px 300px;
+    background-color: #fff;
+}
+
+.historia-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo da seção de downloads */
+.download-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.download-section h2 {
+    font-size: 2rem;
+    color: #0a74da;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões de download */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-btn {
+    background-color: #0a74da;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 768px) {
+    .download-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .download-btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+ 
+/* Responsividade - Seção História */
+@media (max-width: 768px) {
+    .historia-section {
+        padding: 40px 20px; /* Reduz o espaçamento nas laterais */
+    }
+
+    .historia-section h2 {
+        font-size: 1.8rem; /* Diminui o tamanho do título */
+        text-align: center;
+    }
+
+    .historia-section h4 {
+        font-size: 1rem; /* Reduz o tamanho do texto */
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .imghistoria {
+        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .historia-section {
+        padding: 20px 10px; /* Ainda mais reduzido para telas menores */
+    }
+
+    .historia-section h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho do título para telas muito pequenas */
+    }
+
+    .historia-section h4 {
+        font-size: 0.9rem; /* Ajusta o texto para telas menores */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Muda para coluna em dispositivos móveis */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Ajusta margem para o menu em coluna */
+    }
+
+    .home-section {
+        font-size: 55px;
+        height: 35vh; /* Ajuste para altura menor em telas menores */
+    
+    }
+
+    .personagem-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personagem-img img {
+        margin-bottom: 10px;
+        width: 80%; /* Reduz a imagem para responsividade */
+        max-width: 200px;
+    }
+
+    .imghistoria {
+        width: 100%; /* Para que a imagem da história ocupe toda a largura disponível */
+        padding-left: 0; /* Remove padding */
+    }
+    
+
+}
+
